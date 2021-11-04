@@ -12,8 +12,15 @@ st.image('.//assets//wordcloud_topics.png')
 
 dataset = pd.read_csv('Data/df_concat.csv',sep=';')
 dataset.drop(['0','1','2','script'], axis=1, inplace=True)
-st.write('The movies with the respective dominant topic:')
-st.dataframe(dataset)
+
+st.write('Select a topic to get a list of movies alike')
+option = st.selectbox(
+     'Topics:',
+     (0, 1, 2))
+st.write('Movies:', dataset[dataset['Topic']== option])
+
+
+
 
 st.write('Learn more on https://www.analyticsvidhya.com/blog/2021/06/part-2-topic-modeling-and-latent-dirichlet-allocation-lda-using-gensim-and-sklearn/')
 
