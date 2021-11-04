@@ -16,6 +16,7 @@ The visualization is also compiled into a streamlit script. To do this, just ins
 ```bash
 streamlit run app.py
 ```
+## It is also availabe on https://share.streamlit.io/annalug/topic_generator/main/app.py
 
 ## References:
 https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
